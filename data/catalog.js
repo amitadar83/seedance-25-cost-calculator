@@ -41,7 +41,7 @@
       resolution: preferred.resolution || preferred.channel || "Provider default",
       credits_5s: preferred.credits_per_5s == null ? null : preferred.credits_per_5s,
       usd_5s: preferred.usd_per_5s == null ? null : preferred.usd_per_5s,
-      note: preferred.caveat || (preferred.native_audio ? "Native audio included." : "See provider settings and source.")
+      note: preferred.caveat || (preferred.native_audio ? "Native audio included." : "Provider settings and source define the audio mode.")
     };
   }
 
