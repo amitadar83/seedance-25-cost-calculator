@@ -1,0 +1,1359 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-08-13T14:57:50.465Z",
+  "refresh_interval": 60,
+  "status": "degraded",
+  "currency": "USD",
+  "benchmark": {
+    "model": "Seedance 2.5",
+    "duration_seconds": 5,
+    "default_resolution": "720p",
+    "input_mode": "text-or-image-to-video",
+    "promotion_policy": "Base comparisons use regular list pricing; promotions remain separately labeled."
+  },
+  "refresh": {
+    "cadence_minutes": 60,
+    "strategy": "official-source polling with last-known-good fallback",
+    "max_automatic_shift_percent": 25,
+    "note": "Provider pages do not expose universal pricing webhooks. This snapshot is refreshed hourly and can also be refreshed manually."
+  },
+  "source_order": [
+    "runway-plans",
+    "runway-seedance-2-5",
+    "higgsfield-plans",
+    "ltx-studio-plans",
+    "fal-seedance-2-5",
+    "replicate-seedance-2-5",
+    "wavespeed-seedance-2-5",
+    "piapi-seedance-2-5",
+    "kie-seedance-2-5",
+    "runware-seedance-2-5",
+    "atlas-seedance-2-5"
+  ],
+  "summary": {
+    "source_count": 11,
+    "ok": 10,
+    "needs_review": 0,
+    "stale": 1,
+    "curated_baseline": 0,
+    "healthy": false
+  },
+  "checks": [
+    {
+      "id": "runway-plans",
+      "name": "Runway",
+      "kind": "subscription",
+      "source": "https://runway.com/pricing?tool=runway",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "runway-plans-v1",
+      "hash": "sha256-c7e8c209c0cb68e7e7da94980fd47d4931e742bd7ead7b063ae5ddfcc33a6efc",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "runway-seedance-2-5",
+      "name": "Runway",
+      "kind": "model-credit-rate",
+      "source": "https://academy.runwayml.com/models-pricing",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "runway-model-table-v1",
+      "hash": "sha256-0cab9fab70b39e713131578a796d1352c121cf53c5971725e05423cc05114284",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "higgsfield-plans",
+      "name": "Higgsfield",
+      "kind": "subscription",
+      "source": "https://fnf-api-gw.higgsfield.ai/fnf/subscriptions/v2/plans?plan_set_key=ps_a3&with_localization=true",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "higgsfield-plan-api-v1",
+      "hash": "sha256-fe59e0dccdb2f8f17c846592fe0e95a8204564ba58efa167cbefbb568ddded1c",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "ltx-studio-plans",
+      "name": "LTX Studio",
+      "kind": "subscription",
+      "source": "https://website.ltx.studio/studio/pricing",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "ltx-webflow-plans-v1",
+      "hash": "sha256-d4580d12316c0c4a9a38e734b1381d442c306caf251f9b4dd9706600c17426a5",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "fal-seedance-2-5",
+      "name": "fal",
+      "kind": "api",
+      "source": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "fal-endpoint-pricing-v1",
+      "hash": "sha256-15c95c7c1d46bd8ad0a3db03c36f9d44def33cdbf5d02fe39bd7827f80399a5a",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "replicate-seedance-2-5",
+      "name": "Replicate",
+      "kind": "api",
+      "source": "https://replicate.com/bytedance/seedance-2.5",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "replicate-model-tiers-v1",
+      "hash": "sha256-520713b35bc9e9beaa0bcb375bb5f2992e440afa6ac5d73f583c6edca7bd0105",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "wavespeed-seedance-2-5",
+      "name": "WaveSpeedAI",
+      "kind": "api",
+      "source": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "wavespeed-model-table-v1",
+      "hash": "sha256-5509c0f1acfca77ef341c9e55e6399906983a5f6bb39689f1b893018cef91862",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "piapi-seedance-2-5",
+      "name": "PiAPI",
+      "kind": "api",
+      "source": "https://app.piapi.ai/docs/seedance-api/seedance-25",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "piapi-live-docs-table-v2",
+      "hash": "sha256-650ad6c5b299658943578010aa5b6e96fbc16b42f5733f21369c1341bd46da0c",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "kie-seedance-2-5",
+      "name": "Kie.ai",
+      "kind": "api",
+      "source": "https://kie.ai/seedance-2-5",
+      "status": "stale",
+      "fetched_at": "2026-08-13T14:33:24.154Z",
+      "accepted_at": "2026-08-13T14:33:24.154Z",
+      "parser": "kie-pricing-description-v1",
+      "hash": "sha256-86337326dc20898cea3881f8307f2dae859c8137f1038ecc4f18da871f5bffb3",
+      "message": "Error: HTTP 403 from https://kie.ai/seedance-2-5"
+    },
+    {
+      "id": "runware-seedance-2-5",
+      "name": "Runware",
+      "kind": "api",
+      "source": "https://runware.ai/pricing",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "runware-pricing-catalog-v1",
+      "hash": "sha256-a5d5982a5d9c9faa68d046273c66e02dd9f848326205ebdc395d1eb2b235d751",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    },
+    {
+      "id": "atlas-seedance-2-5",
+      "name": "Atlas Cloud",
+      "kind": "api",
+      "source": "https://www.atlascloud.ai/models/bytedance/seedance-2.5/text-to-video",
+      "status": "ok",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "accepted_at": "2026-08-13T14:57:50.465Z",
+      "parser": "atlas-model-default-v1",
+      "hash": "sha256-78d28bfc8371d4866e058a05b082ec3383ee7687970a90adcde7aa18cd226cec",
+      "message": "Latest official-source values parsed, validated, and accepted."
+    }
+  ],
+  "updates": {
+    "subscription_platforms": {
+      "runway": {
+        "plans": {
+          "standard": {
+            "name": "Standard",
+            "monthly_usd": 15,
+            "monthly_credits": 625
+          },
+          "pro": {
+            "name": "Pro",
+            "monthly_usd": 35,
+            "monthly_credits": 2250
+          },
+          "max": {
+            "name": "Max",
+            "monthly_usd": 95,
+            "monthly_credits": 9500
+          }
+        },
+        "rates": {
+          "480p": {
+            "credits_per_second": 20,
+            "credits_per_5s": 100
+          },
+          "720p": {
+            "credits_per_second": 30,
+            "credits_per_5s": 150
+          }
+        },
+        "promotions": [
+          {
+            "title": "Unlimited Seedance 2.5 on new Max plans",
+            "eligible_plan": "Max",
+            "ends_label": "August 14th",
+            "terms_url": "https://runway.com/seedance-terms",
+            "temporary": true
+          }
+        ],
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "source_status": "ok"
+      },
+      "higgsfield": {
+        "plans": {
+          "starter_270": {
+            "name": "Starter",
+            "type": "starter",
+            "credits": 270,
+            "monthly_list_usd": 19,
+            "current_checkout_usd": 19,
+            "renewal_usd": 19,
+            "discount": null,
+            "monthly_usd": 19,
+            "promotional_monthly_usd": 19,
+            "renewal_monthly_usd": 19
+          },
+          "plus_1200": {
+            "name": "Plus",
+            "type": "plus",
+            "credits": 1200,
+            "monthly_list_usd": 59,
+            "current_checkout_usd": 59,
+            "renewal_usd": 59,
+            "discount": null,
+            "monthly_usd": 59,
+            "promotional_monthly_usd": 59,
+            "renewal_monthly_usd": 59
+          },
+          "ultra_3000": {
+            "name": "Ultra",
+            "type": "ultra",
+            "credits": 3000,
+            "monthly_list_usd": 129,
+            "current_checkout_usd": 129,
+            "renewal_usd": 129,
+            "discount": null,
+            "monthly_usd": 129,
+            "promotional_monthly_usd": 129,
+            "renewal_monthly_usd": 129
+          },
+          "ultra_6000": {
+            "name": "Ultra",
+            "type": "ultra",
+            "credits": 6000,
+            "monthly_list_usd": 250,
+            "current_checkout_usd": 220,
+            "renewal_usd": 250,
+            "discount": {
+              "percent_off": 12,
+              "duration": "once",
+              "duration_months": 1
+            },
+            "monthly_usd": 250,
+            "promotional_monthly_usd": 220,
+            "renewal_monthly_usd": 250
+          },
+          "ultra_9000": {
+            "name": "Ultra",
+            "type": "ultra",
+            "credits": 9000,
+            "monthly_list_usd": 375,
+            "current_checkout_usd": 310,
+            "renewal_usd": 375,
+            "discount": {
+              "percent_off": 17,
+              "duration": "once",
+              "duration_months": 1
+            },
+            "monthly_usd": 375,
+            "promotional_monthly_usd": 310,
+            "renewal_monthly_usd": 375
+          },
+          "team_1000": {
+            "name": "Team",
+            "type": "team",
+            "credits": 1000,
+            "monthly_list_usd": 79,
+            "current_checkout_usd": 69,
+            "renewal_usd": 79,
+            "discount": {
+              "percent_off": 13,
+              "duration": "once",
+              "duration_months": 1
+            },
+            "monthly_usd": 79,
+            "promotional_monthly_usd": 69,
+            "renewal_monthly_usd": 79
+          },
+          "scale_2500": {
+            "name": "Scale",
+            "type": "scale",
+            "credits": 2500,
+            "monthly_list_usd": 215,
+            "current_checkout_usd": 169.01,
+            "renewal_usd": 169.01,
+            "discount": {
+              "percent_off": 22,
+              "duration": "forever",
+              "duration_months": null
+            },
+            "monthly_usd": 215,
+            "promotional_monthly_usd": 169.01,
+            "renewal_monthly_usd": 169.01
+          }
+        },
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "source_status": "ok"
+      },
+      "ltx": {
+        "plans": {
+          "lite": {
+            "name": "Lite",
+            "monthly_usd": 15,
+            "monthly_credits": 8000
+          },
+          "standard": {
+            "name": "Standard",
+            "monthly_usd": 35,
+            "monthly_credits": 28000
+          },
+          "pro": {
+            "name": "Pro",
+            "monthly_usd": 125,
+            "monthly_credits": 110000
+          }
+        },
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "source_status": "ok"
+      }
+    },
+    "api_providers": {
+      "fal": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.2205,
+            "usd_per_5s": 1.1025
+          },
+          "720p": {
+            "usd_per_second": 0.473,
+            "usd_per_5s": 2.365
+          }
+        },
+        "billing_unit": "1000 tokens",
+        "usd_per_1000_tokens": 0.0214,
+        "pricing_basis": "approximate standard 16:9 output; native audio included",
+        "rates_5s": {
+          "480p": 1.1025,
+          "720p": 2.365
+        },
+        "rates_per_second": {
+          "480p": 0.2205,
+          "720p": 0.473
+        },
+        "source_status": "ok",
+        "accepted_at": "2026-08-13T14:57:50.465Z"
+      },
+      "replicate": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.1028,
+            "usd_per_5s": 0.514
+          },
+          "720p": {
+            "usd_per_second": 0.2312,
+            "usd_per_5s": 1.156
+          }
+        },
+        "pricing_basis": "non-video input; per output second",
+        "video_input_rates": {
+          "480p": {
+            "usd_per_second": 0.4304,
+            "usd_per_5s": 2.152
+          },
+          "720p": {
+            "usd_per_second": 0.9676,
+            "usd_per_5s": 4.838
+          }
+        },
+        "rates_5s": {
+          "480p": 0.514,
+          "720p": 1.156
+        },
+        "rates_per_second": {
+          "480p": 0.1028,
+          "720p": 0.2312
+        },
+        "source_status": "ok",
+        "accepted_at": "2026-08-13T14:57:50.465Z"
+      },
+      "wavespeed": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.18,
+            "usd_per_5s": 0.9
+          },
+          "720p": {
+            "usd_per_second": 0.36,
+            "usd_per_5s": 1.8
+          }
+        },
+        "pricing_basis": "standard text-to-video; published five-second table",
+        "rates_5s": {
+          "480p": 0.9,
+          "720p": 1.8
+        },
+        "rates_per_second": {
+          "480p": 0.18,
+          "720p": 0.36
+        },
+        "source_status": "ok",
+        "accepted_at": "2026-08-13T14:57:50.465Z"
+      },
+      "piapi": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.15,
+            "usd_per_5s": 0.75
+          },
+          "720p": {
+            "usd_per_second": 0.35,
+            "usd_per_5s": 1.75
+          }
+        },
+        "pricing_basis": "per output second; official live Seedance 2.5 docs",
+        "rates_5s": {
+          "480p": 0.75,
+          "720p": 1.75
+        },
+        "rates_per_second": {
+          "480p": 0.15,
+          "720p": 0.35
+        },
+        "source_status": "ok",
+        "accepted_at": "2026-08-13T14:57:50.465Z"
+      },
+      "kie": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "credits_per_second": 28,
+            "usd_per_second": 0.14,
+            "usd_per_5s": 0.7
+          },
+          "720p": {
+            "credits_per_second": 63,
+            "usd_per_second": 0.315,
+            "usd_per_5s": 1.575
+          }
+        },
+        "pricing_basis": "no video input; public beta list price",
+        "credits_per_usd": 200,
+        "with_video_rates": {
+          "480p": {
+            "credits_per_second": 17,
+            "usd_per_second": 0.085,
+            "usd_per_5s": 0.425
+          },
+          "720p": {
+            "credits_per_second": 38,
+            "usd_per_second": 0.19,
+            "usd_per_5s": 0.95
+          }
+        },
+        "rates_5s": {
+          "480p": 0.7,
+          "720p": 1.575
+        },
+        "rates_per_second": {
+          "480p": 0.14,
+          "720p": 0.315
+        },
+        "source_status": "stale",
+        "accepted_at": "2026-08-13T14:33:24.154Z"
+      },
+      "runware": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.1025,
+            "usd_per_5s": 0.5125
+          },
+          "720p": {
+            "usd_per_second": 0.2304,
+            "usd_per_5s": 1.152
+          }
+        },
+        "pricing_basis": "text/image-to-video; official one-second examples",
+        "rates_5s": {
+          "480p": 0.5125,
+          "720p": 1.152
+        },
+        "rates_per_second": {
+          "480p": 0.1025,
+          "720p": 0.2304
+        },
+        "source_status": "ok",
+        "accepted_at": "2026-08-13T14:57:50.465Z"
+      },
+      "atlas": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "720p": {
+            "usd_per_5s": 0.134
+          }
+        },
+        "default_run": {
+          "usd": 0.134,
+          "duration_seconds": 5,
+          "resolution": "720p"
+        },
+        "pricing_basis": "official page price at the official schema's default 5s / 720p configuration",
+        "rates_5s": {
+          "720p": 0.134
+        },
+        "rates_per_second": {},
+        "source_status": "ok",
+        "accepted_at": "2026-08-13T14:57:50.465Z"
+      }
+    }
+  },
+  "sources": {
+    "runway-plans": {
+      "id": "runway-plans",
+      "provider": "Runway",
+      "kind": "subscription",
+      "source": "https://runway.com/pricing?tool=runway",
+      "supporting_sources": [],
+      "parser": "runway-plans-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-c7e8c209c0cb68e7e7da94980fd47d4931e742bd7ead7b063ae5ddfcc33a6efc",
+      "changed_at": "2026-08-13T13:48:22.523Z",
+      "values": {
+        "currency": "USD",
+        "plans": {
+          "standard": {
+            "name": "Standard",
+            "monthly_usd": 15,
+            "monthly_credits": 625
+          },
+          "pro": {
+            "name": "Pro",
+            "monthly_usd": 35,
+            "monthly_credits": 2250
+          },
+          "max": {
+            "name": "Max",
+            "monthly_usd": 95,
+            "monthly_credits": 9500
+          }
+        },
+        "promotions": [
+          {
+            "title": "Unlimited Seedance 2.5 on new Max plans",
+            "eligible_plan": "Max",
+            "ends_label": "August 14th",
+            "terms_url": "https://runway.com/seedance-terms",
+            "temporary": true
+          }
+        ]
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-c7e8c209c0cb68e7e7da94980fd47d4931e742bd7ead7b063ae5ddfcc33a6efc",
+        "values": {
+          "currency": "USD",
+          "plans": {
+            "standard": {
+              "name": "Standard",
+              "monthly_usd": 15,
+              "monthly_credits": 625
+            },
+            "pro": {
+              "name": "Pro",
+              "monthly_usd": 35,
+              "monthly_credits": 2250
+            },
+            "max": {
+              "name": "Max",
+              "monthly_usd": 95,
+              "monthly_credits": 9500
+            }
+          },
+          "promotions": [
+            {
+              "title": "Unlimited Seedance 2.5 on new Max plans",
+              "eligible_plan": "Max",
+              "ends_label": "August 14th",
+              "terms_url": "https://runway.com/seedance-terms",
+              "temporary": true
+            }
+          ]
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "runway-seedance-2-5": {
+      "id": "runway-seedance-2-5",
+      "provider": "Runway",
+      "kind": "model-credit-rate",
+      "source": "https://academy.runwayml.com/models-pricing",
+      "supporting_sources": [],
+      "parser": "runway-model-table-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-0cab9fab70b39e713131578a796d1352c121cf53c5971725e05423cc05114284",
+      "changed_at": "2026-08-13T13:48:22.523Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "rates": {
+          "480p": {
+            "credits_per_second": 20,
+            "credits_per_5s": 100
+          },
+          "720p": {
+            "credits_per_second": 30,
+            "credits_per_5s": 150
+          }
+        },
+        "unit_note": "/sec + 15 (720p) or 10 (480p) per sec of input video"
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-0cab9fab70b39e713131578a796d1352c121cf53c5971725e05423cc05114284",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "rates": {
+            "480p": {
+              "credits_per_second": 20,
+              "credits_per_5s": 100
+            },
+            "720p": {
+              "credits_per_second": 30,
+              "credits_per_5s": 150
+            }
+          },
+          "unit_note": "/sec + 15 (720p) or 10 (480p) per sec of input video"
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "higgsfield-plans": {
+      "id": "higgsfield-plans",
+      "provider": "Higgsfield",
+      "kind": "subscription",
+      "source": "https://fnf-api-gw.higgsfield.ai/fnf/subscriptions/v2/plans?plan_set_key=ps_a3&with_localization=true",
+      "supporting_sources": [],
+      "parser": "higgsfield-plan-api-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-fe59e0dccdb2f8f17c846592fe0e95a8204564ba58efa167cbefbb568ddded1c",
+      "changed_at": "2026-08-13T14:33:11.091Z",
+      "values": {
+        "currency": "USD",
+        "plans": {
+          "starter_270": {
+            "name": "Starter",
+            "type": "starter",
+            "credits": 270,
+            "monthly_list_usd": 19,
+            "current_checkout_usd": 19,
+            "renewal_usd": 19,
+            "discount": null
+          },
+          "plus_1200": {
+            "name": "Plus",
+            "type": "plus",
+            "credits": 1200,
+            "monthly_list_usd": 59,
+            "current_checkout_usd": 59,
+            "renewal_usd": 59,
+            "discount": null
+          },
+          "ultra_3000": {
+            "name": "Ultra",
+            "type": "ultra",
+            "credits": 3000,
+            "monthly_list_usd": 129,
+            "current_checkout_usd": 129,
+            "renewal_usd": 129,
+            "discount": null
+          },
+          "ultra_6000": {
+            "name": "Ultra",
+            "type": "ultra",
+            "credits": 6000,
+            "monthly_list_usd": 250,
+            "current_checkout_usd": 220,
+            "renewal_usd": 250,
+            "discount": {
+              "percent_off": 12,
+              "duration": "once",
+              "duration_months": 1
+            }
+          },
+          "ultra_9000": {
+            "name": "Ultra",
+            "type": "ultra",
+            "credits": 9000,
+            "monthly_list_usd": 375,
+            "current_checkout_usd": 310,
+            "renewal_usd": 375,
+            "discount": {
+              "percent_off": 17,
+              "duration": "once",
+              "duration_months": 1
+            }
+          },
+          "team_1000": {
+            "name": "Team",
+            "type": "team",
+            "credits": 1000,
+            "monthly_list_usd": 79,
+            "current_checkout_usd": 69,
+            "renewal_usd": 79,
+            "discount": {
+              "percent_off": 13,
+              "duration": "once",
+              "duration_months": 1
+            }
+          },
+          "scale_2500": {
+            "name": "Scale",
+            "type": "scale",
+            "credits": 2500,
+            "monthly_list_usd": 215,
+            "current_checkout_usd": 169.01,
+            "renewal_usd": 169.01,
+            "discount": {
+              "percent_off": 22,
+              "duration": "forever",
+              "duration_months": null
+            }
+          }
+        }
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-fe59e0dccdb2f8f17c846592fe0e95a8204564ba58efa167cbefbb568ddded1c",
+        "values": {
+          "currency": "USD",
+          "plans": {
+            "starter_270": {
+              "name": "Starter",
+              "type": "starter",
+              "credits": 270,
+              "monthly_list_usd": 19,
+              "current_checkout_usd": 19,
+              "renewal_usd": 19,
+              "discount": null
+            },
+            "plus_1200": {
+              "name": "Plus",
+              "type": "plus",
+              "credits": 1200,
+              "monthly_list_usd": 59,
+              "current_checkout_usd": 59,
+              "renewal_usd": 59,
+              "discount": null
+            },
+            "ultra_3000": {
+              "name": "Ultra",
+              "type": "ultra",
+              "credits": 3000,
+              "monthly_list_usd": 129,
+              "current_checkout_usd": 129,
+              "renewal_usd": 129,
+              "discount": null
+            },
+            "ultra_6000": {
+              "name": "Ultra",
+              "type": "ultra",
+              "credits": 6000,
+              "monthly_list_usd": 250,
+              "current_checkout_usd": 220,
+              "renewal_usd": 250,
+              "discount": {
+                "percent_off": 12,
+                "duration": "once",
+                "duration_months": 1
+              }
+            },
+            "ultra_9000": {
+              "name": "Ultra",
+              "type": "ultra",
+              "credits": 9000,
+              "monthly_list_usd": 375,
+              "current_checkout_usd": 310,
+              "renewal_usd": 375,
+              "discount": {
+                "percent_off": 17,
+                "duration": "once",
+                "duration_months": 1
+              }
+            },
+            "team_1000": {
+              "name": "Team",
+              "type": "team",
+              "credits": 1000,
+              "monthly_list_usd": 79,
+              "current_checkout_usd": 69,
+              "renewal_usd": 79,
+              "discount": {
+                "percent_off": 13,
+                "duration": "once",
+                "duration_months": 1
+              }
+            },
+            "scale_2500": {
+              "name": "Scale",
+              "type": "scale",
+              "credits": 2500,
+              "monthly_list_usd": 215,
+              "current_checkout_usd": 169.01,
+              "renewal_usd": 169.01,
+              "discount": {
+                "percent_off": 22,
+                "duration": "forever",
+                "duration_months": null
+              }
+            }
+          }
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "ltx-studio-plans": {
+      "id": "ltx-studio-plans",
+      "provider": "LTX Studio",
+      "kind": "subscription",
+      "source": "https://website.ltx.studio/studio/pricing",
+      "supporting_sources": [],
+      "parser": "ltx-webflow-plans-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-d4580d12316c0c4a9a38e734b1381d442c306caf251f9b4dd9706600c17426a5",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "currency": "USD",
+        "plans": {
+          "lite": {
+            "name": "Lite",
+            "monthly_usd": 15,
+            "monthly_credits": 8000
+          },
+          "standard": {
+            "name": "Standard",
+            "monthly_usd": 35,
+            "monthly_credits": 28000
+          },
+          "pro": {
+            "name": "Pro",
+            "monthly_usd": 125,
+            "monthly_credits": 110000
+          }
+        }
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-d4580d12316c0c4a9a38e734b1381d442c306caf251f9b4dd9706600c17426a5",
+        "values": {
+          "currency": "USD",
+          "plans": {
+            "lite": {
+              "name": "Lite",
+              "monthly_usd": 15,
+              "monthly_credits": 8000
+            },
+            "standard": {
+              "name": "Standard",
+              "monthly_usd": 35,
+              "monthly_credits": 28000
+            },
+            "pro": {
+              "name": "Pro",
+              "monthly_usd": 125,
+              "monthly_credits": 110000
+            }
+          }
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "fal-seedance-2-5": {
+      "id": "fal-seedance-2-5",
+      "provider": "fal",
+      "kind": "api",
+      "source": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video",
+      "supporting_sources": [],
+      "parser": "fal-endpoint-pricing-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-15c95c7c1d46bd8ad0a3db03c36f9d44def33cdbf5d02fe39bd7827f80399a5a",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.2205,
+            "usd_per_5s": 1.1025
+          },
+          "720p": {
+            "usd_per_second": 0.473,
+            "usd_per_5s": 2.365
+          }
+        },
+        "billing_unit": "1000 tokens",
+        "usd_per_1000_tokens": 0.0214,
+        "pricing_basis": "approximate standard 16:9 output; native audio included"
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-15c95c7c1d46bd8ad0a3db03c36f9d44def33cdbf5d02fe39bd7827f80399a5a",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "480p": {
+              "usd_per_second": 0.2205,
+              "usd_per_5s": 1.1025
+            },
+            "720p": {
+              "usd_per_second": 0.473,
+              "usd_per_5s": 2.365
+            }
+          },
+          "billing_unit": "1000 tokens",
+          "usd_per_1000_tokens": 0.0214,
+          "pricing_basis": "approximate standard 16:9 output; native audio included"
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "replicate-seedance-2-5": {
+      "id": "replicate-seedance-2-5",
+      "provider": "Replicate",
+      "kind": "api",
+      "source": "https://replicate.com/bytedance/seedance-2.5",
+      "supporting_sources": [],
+      "parser": "replicate-model-tiers-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-520713b35bc9e9beaa0bcb375bb5f2992e440afa6ac5d73f583c6edca7bd0105",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.1028,
+            "usd_per_5s": 0.514
+          },
+          "720p": {
+            "usd_per_second": 0.2312,
+            "usd_per_5s": 1.156
+          }
+        },
+        "pricing_basis": "non-video input; per output second",
+        "video_input_rates": {
+          "480p": {
+            "usd_per_second": 0.4304,
+            "usd_per_5s": 2.152
+          },
+          "720p": {
+            "usd_per_second": 0.9676,
+            "usd_per_5s": 4.838
+          }
+        }
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-520713b35bc9e9beaa0bcb375bb5f2992e440afa6ac5d73f583c6edca7bd0105",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "480p": {
+              "usd_per_second": 0.1028,
+              "usd_per_5s": 0.514
+            },
+            "720p": {
+              "usd_per_second": 0.2312,
+              "usd_per_5s": 1.156
+            }
+          },
+          "pricing_basis": "non-video input; per output second",
+          "video_input_rates": {
+            "480p": {
+              "usd_per_second": 0.4304,
+              "usd_per_5s": 2.152
+            },
+            "720p": {
+              "usd_per_second": 0.9676,
+              "usd_per_5s": 4.838
+            }
+          }
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "wavespeed-seedance-2-5": {
+      "id": "wavespeed-seedance-2-5",
+      "provider": "WaveSpeedAI",
+      "kind": "api",
+      "source": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video",
+      "supporting_sources": [],
+      "parser": "wavespeed-model-table-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-5509c0f1acfca77ef341c9e55e6399906983a5f6bb39689f1b893018cef91862",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.18,
+            "usd_per_5s": 0.9
+          },
+          "720p": {
+            "usd_per_second": 0.36,
+            "usd_per_5s": 1.8
+          }
+        },
+        "pricing_basis": "standard text-to-video; published five-second table"
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-5509c0f1acfca77ef341c9e55e6399906983a5f6bb39689f1b893018cef91862",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "480p": {
+              "usd_per_second": 0.18,
+              "usd_per_5s": 0.9
+            },
+            "720p": {
+              "usd_per_second": 0.36,
+              "usd_per_5s": 1.8
+            }
+          },
+          "pricing_basis": "standard text-to-video; published five-second table"
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "piapi-seedance-2-5": {
+      "id": "piapi-seedance-2-5",
+      "provider": "PiAPI",
+      "kind": "api",
+      "source": "https://app.piapi.ai/docs/seedance-api/seedance-25",
+      "supporting_sources": [],
+      "parser": "piapi-live-docs-table-v2",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-650ad6c5b299658943578010aa5b6e96fbc16b42f5733f21369c1341bd46da0c",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.15,
+            "usd_per_5s": 0.75
+          },
+          "720p": {
+            "usd_per_second": 0.35,
+            "usd_per_5s": 1.75
+          }
+        },
+        "pricing_basis": "per output second; official live Seedance 2.5 docs"
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-650ad6c5b299658943578010aa5b6e96fbc16b42f5733f21369c1341bd46da0c",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "480p": {
+              "usd_per_second": 0.15,
+              "usd_per_5s": 0.75
+            },
+            "720p": {
+              "usd_per_second": 0.35,
+              "usd_per_5s": 1.75
+            }
+          },
+          "pricing_basis": "per output second; official live Seedance 2.5 docs"
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "kie-seedance-2-5": {
+      "id": "kie-seedance-2-5",
+      "provider": "Kie.ai",
+      "kind": "api",
+      "source": "https://kie.ai/seedance-2-5",
+      "supporting_sources": [],
+      "parser": "kie-pricing-description-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:33:24.154Z",
+      "status": "stale",
+      "http_status": 200,
+      "raw_sha256": "sha256-86337326dc20898cea3881f8307f2dae859c8137f1038ecc4f18da871f5bffb3",
+      "changed_at": "2026-08-13T13:48:22.523Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "credits_per_second": 28,
+            "usd_per_second": 0.14,
+            "usd_per_5s": 0.7
+          },
+          "720p": {
+            "credits_per_second": 63,
+            "usd_per_second": 0.315,
+            "usd_per_5s": 1.575
+          }
+        },
+        "pricing_basis": "no video input; public beta list price",
+        "credits_per_usd": 200,
+        "with_video_rates": {
+          "480p": {
+            "credits_per_second": 17,
+            "usd_per_second": 0.085,
+            "usd_per_5s": 0.425
+          },
+          "720p": {
+            "credits_per_second": 38,
+            "usd_per_second": 0.19,
+            "usd_per_5s": 0.95
+          }
+        }
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:33:24.154Z",
+        "raw_sha256": "sha256-86337326dc20898cea3881f8307f2dae859c8137f1038ecc4f18da871f5bffb3",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "480p": {
+              "credits_per_second": 28,
+              "usd_per_second": 0.14,
+              "usd_per_5s": 0.7
+            },
+            "720p": {
+              "credits_per_second": 63,
+              "usd_per_second": 0.315,
+              "usd_per_5s": 1.575
+            }
+          },
+          "pricing_basis": "no video input; public beta list price",
+          "credits_per_usd": 200,
+          "with_video_rates": {
+            "480p": {
+              "credits_per_second": 17,
+              "usd_per_second": 0.085,
+              "usd_per_5s": 0.425
+            },
+            "720p": {
+              "credits_per_second": 38,
+              "usd_per_second": 0.19,
+              "usd_per_5s": 0.95
+            }
+          }
+        }
+      },
+      "candidate": null,
+      "issues": [
+        {
+          "type": "fetch_error",
+          "message": "Error: HTTP 403 from https://kie.ai/seedance-2-5"
+        }
+      ]
+    },
+    "runware-seedance-2-5": {
+      "id": "runware-seedance-2-5",
+      "provider": "Runware",
+      "kind": "api",
+      "source": "https://runware.ai/pricing",
+      "supporting_sources": [],
+      "parser": "runware-pricing-catalog-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": 200,
+      "raw_sha256": "sha256-a5d5982a5d9c9faa68d046273c66e02dd9f848326205ebdc395d1eb2b235d751",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "480p": {
+            "usd_per_second": 0.1025,
+            "usd_per_5s": 0.5125
+          },
+          "720p": {
+            "usd_per_second": 0.2304,
+            "usd_per_5s": 1.152
+          }
+        },
+        "pricing_basis": "text/image-to-video; official one-second examples"
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-a5d5982a5d9c9faa68d046273c66e02dd9f848326205ebdc395d1eb2b235d751",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "480p": {
+              "usd_per_second": 0.1025,
+              "usd_per_5s": 0.5125
+            },
+            "720p": {
+              "usd_per_second": 0.2304,
+              "usd_per_5s": 1.152
+            }
+          },
+          "pricing_basis": "text/image-to-video; official one-second examples"
+        }
+      },
+      "candidate": null,
+      "issues": []
+    },
+    "atlas-seedance-2-5": {
+      "id": "atlas-seedance-2-5",
+      "provider": "Atlas Cloud",
+      "kind": "api",
+      "source": "https://www.atlascloud.ai/models/bytedance/seedance-2.5/text-to-video",
+      "supporting_sources": [
+        "https://static.atlascloud.ai/model/schema/bytedance-seedance-2.5-text-to-video.json"
+      ],
+      "parser": "atlas-model-default-v1",
+      "checked_at": "2026-08-13T14:57:50.465Z",
+      "fetched_at": "2026-08-13T14:57:50.465Z",
+      "status": "ok",
+      "http_status": {
+        "https://www.atlascloud.ai/models/bytedance/seedance-2.5/text-to-video": 200,
+        "https://static.atlascloud.ai/model/schema/bytedance-seedance-2.5-text-to-video.json": 200
+      },
+      "raw_sha256": "sha256-78d28bfc8371d4866e058a05b082ec3383ee7687970a90adcde7aa18cd226cec",
+      "changed_at": "2026-08-13T13:30:00.000Z",
+      "values": {
+        "model": "Seedance 2.5",
+        "availability": "live",
+        "currency": "USD",
+        "rates": {
+          "720p": {
+            "usd_per_5s": 0.134
+          }
+        },
+        "default_run": {
+          "usd": 0.134,
+          "duration_seconds": 5,
+          "resolution": "720p"
+        },
+        "pricing_basis": "official page price at the official schema's default 5s / 720p configuration"
+      },
+      "last_good": {
+        "accepted_at": "2026-08-13T14:57:50.465Z",
+        "raw_sha256": "sha256-78d28bfc8371d4866e058a05b082ec3383ee7687970a90adcde7aa18cd226cec",
+        "values": {
+          "model": "Seedance 2.5",
+          "availability": "live",
+          "currency": "USD",
+          "rates": {
+            "720p": {
+              "usd_per_5s": 0.134
+            }
+          },
+          "default_run": {
+            "usd": 0.134,
+            "duration_seconds": 5,
+            "resolution": "720p"
+          },
+          "pricing_basis": "official page price at the official schema's default 5s / 720p configuration"
+        }
+      },
+      "candidate": null,
+      "issues": []
+    }
+  }
+}

@@ -1,0 +1,55 @@
+name: Refresh live pricing
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-pricing-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out site
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 24
+
+      - name: Refresh first-party pricing sources
+        run: node scripts/refresh-pricing.mjs
+
+      - name: Validate generated browser data
+        run: node scripts/refresh-pricing.mjs --validate-only
+
+      - name: Commit updated snapshot
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/live-pricing.json data/live-pricing.js; then
+            echo "Pricing snapshot is already current."
+            exit 0
+          fi
+          base_sha=$(gh api "repos/${GITHUB_REPOSITORY}/git/ref/heads/main" --jq '.object.sha')
+          base_tree=$(gh api "repos/${GITHUB_REPOSITORY}/git/commits/${base_sha}" --jq '.tree.sha')
+          json_blob=$(base64 < data/live-pricing.json | tr -d '\n' | jq -Rs '{content: ., encoding: "base64"}' | gh api --method POST "repos/${GITHUB_REPOSITORY}/git/blobs" --input - --jq '.sha')
+          js_blob=$(base64 < data/live-pricing.js | tr -d '\n' | jq -Rs '{content: ., encoding: "base64"}' | gh api --method POST "repos/${GITHUB_REPOSITORY}/git/blobs" --input - --jq '.sha')
+          tree_sha=$(jq -n --arg base "$base_tree" --arg json "$json_blob" --arg js "$js_blob" '{base_tree: $base, tree: [{path: "data/live-pricing.json", mode: "100644", type: "blob", sha: $json}, {path: "data/live-pricing.js", mode: "100644", type: "blob", sha: $js}]}' | gh api --method POST "repos/${GITHUB_REPOSITORY}/git/trees" --input - --jq '.sha')
+          commit_sha=$(jq -n --arg message "chore: refresh live pricing snapshot" --arg tree "$tree_sha" --arg parent "$base_sha" '{message: $message, tree: $tree, parents: [$parent]}' | gh api --method POST "repos/${GITHUB_REPOSITORY}/git/commits" --input - --jq '.sha')
+          jq -n --arg sha "$commit_sha" '{sha: $sha, force: false}' | gh api --method PATCH "repos/${GITHUB_REPOSITORY}/git/refs/heads/main" --input - >/dev/null

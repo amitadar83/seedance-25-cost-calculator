@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.gstack/
+coverage/
+node_modules/
+test-results/
+*.log
+
