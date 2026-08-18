@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-08-18T04:55:03.643Z",
+  "generated_at": "2026-08-18T05:48:11.882Z",
   "refresh_interval": 60,
   "status": "degraded",
   "currency": "USD",
@@ -45,8 +45,8 @@
       "kind": "subscription",
       "source": "https://runway.com/pricing?tool=runway",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "runway-plans-v1",
       "hash": "sha256-88d7b06e55d73bf199e7441798be1f7cec9259910f64a71eca7dc566802c544f",
       "message": "Latest official-source values parsed, validated, and accepted."
@@ -57,8 +57,8 @@
       "kind": "model-credit-rate",
       "source": "https://academy.runwayml.com/models-pricing",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "runway-model-table-v1",
       "hash": "sha256-31d51242b61b3d9ee26b504e487d39d5c988d17a933acfab7e4bff93e5244730",
       "message": "Latest official-source values parsed, validated, and accepted."
@@ -69,10 +69,10 @@
       "kind": "subscription",
       "source": "https://fnf-api-gw.higgsfield.ai/fnf/subscriptions/v2/plans?plan_set_key=ps_a3&with_localization=true",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "higgsfield-plan-api-v1",
-      "hash": "sha256-fe59e0dccdb2f8f17c846592fe0e95a8204564ba58efa167cbefbb568ddded1c",
+      "hash": "sha256-4d7ddad3f104e7eb6bb7c2cc0d31071ade871b915bbbe1d58d737e4c47b9cd06",
       "message": "Latest official-source values parsed, validated, and accepted."
     },
     {
@@ -81,8 +81,8 @@
       "kind": "subscription",
       "source": "https://website.ltx.studio/studio/pricing",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "ltx-webflow-plans-v1",
       "hash": "sha256-d4580d12316c0c4a9a38e734b1381d442c306caf251f9b4dd9706600c17426a5",
       "message": "Latest official-source values parsed, validated, and accepted."
@@ -93,10 +93,10 @@
       "kind": "api",
       "source": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "fal-endpoint-pricing-v1",
-      "hash": "sha256-5fbfc52fc351e3a1c2c8f5a1b2b3008bb80ab76b7a7ef18ccb17e4bf33277b94",
+      "hash": "sha256-d0cfb8c0a0212d8b70dddef84c43532d3d95cf2e93b85b72b3be5d26fb3a2c51",
       "message": "Latest official-source values parsed, validated, and accepted."
     },
     {
@@ -105,10 +105,10 @@
       "kind": "api",
       "source": "https://replicate.com/bytedance/seedance-2.5",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "replicate-model-tiers-v1",
-      "hash": "sha256-f02a30bb9bb92f38cf32c8f595a10ed61a998aa950a6c6985f7eacf6612d8b4a",
+      "hash": "sha256-7dc2f7239a62d3d6a69c95cf6a5cc1aa9c30f51633b79add7e0eb11831ad7f76",
       "message": "Latest official-source values parsed, validated, and accepted."
     },
     {
@@ -117,10 +117,10 @@
       "kind": "api",
       "source": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "wavespeed-model-table-v1",
-      "hash": "sha256-c29fa7907b5138918421bfefac7e3fa51336142456dd62d29bdb3daf8cfd44ed",
+      "hash": "sha256-b941e8ff4830c141f2deb52c25b8b56e3974bffce2ead5bb4bd8d0fceb498d8c",
       "message": "Latest official-source values parsed, validated, and accepted."
     },
     {
@@ -129,8 +129,8 @@
       "kind": "api",
       "source": "https://app.piapi.ai/docs/seedance-api/seedance-25",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "piapi-live-docs-table-v2",
       "hash": "sha256-52f39ca5fe94b18f3a75c1a91da423296c85fe995357d4dceb81be7498549fe1",
       "message": "Latest official-source values parsed, validated, and accepted."
@@ -153,10 +153,10 @@
       "kind": "api",
       "source": "https://runware.ai/pricing",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "runware-pricing-catalog-v1",
-      "hash": "sha256-74a1d0eb173d357258c6105af529ad60b429affff053e9b6f59613698e04273a",
+      "hash": "sha256-4f5c9867493de9ec7ee55c41923376329ef2a0ee441226e1751030493a9f4eca",
       "message": "Latest official-source values parsed, validated, and accepted."
     },
     {
@@ -165,10 +165,10 @@
       "kind": "api",
       "source": "https://www.atlascloud.ai/models/bytedance/seedance-2.5/text-to-video",
       "status": "ok",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
-      "accepted_at": "2026-08-18T04:55:03.643Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
+      "accepted_at": "2026-08-18T05:48:11.882Z",
       "parser": "atlas-model-default-v1",
-      "hash": "sha256-d0b75fa99175931020c5a6cf0abd605ed19f4ac7b605bd6214f5e0da001dd104",
+      "hash": "sha256-f8bf2a2a802aff391976e2eebe840ad67416467cc56af32f22d7daf099eae617",
       "message": "Latest official-source values parsed, validated, and accepted."
     }
   ],
@@ -203,7 +203,7 @@
           }
         },
         "promotions": [],
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "source_status": "ok"
       },
       "higgsfield": {
@@ -309,7 +309,7 @@
             "renewal_monthly_usd": 169.01
           }
         },
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "source_status": "ok"
       },
       "ltx": {
@@ -330,7 +330,7 @@
             "monthly_credits": 110000
           }
         },
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "source_status": "ok"
       }
     },
@@ -361,7 +361,7 @@
           "720p": 0.473
         },
         "source_status": "ok",
-        "accepted_at": "2026-08-18T04:55:03.643Z"
+        "accepted_at": "2026-08-18T05:48:11.882Z"
       },
       "replicate": {
         "model": "Seedance 2.5",
@@ -397,7 +397,7 @@
           "720p": 0.2312
         },
         "source_status": "ok",
-        "accepted_at": "2026-08-18T04:55:03.643Z"
+        "accepted_at": "2026-08-18T05:48:11.882Z"
       },
       "wavespeed": {
         "model": "Seedance 2.5",
@@ -423,7 +423,7 @@
           "720p": 0.36
         },
         "source_status": "ok",
-        "accepted_at": "2026-08-18T04:55:03.643Z"
+        "accepted_at": "2026-08-18T05:48:11.882Z"
       },
       "piapi": {
         "model": "Seedance 2.5",
@@ -449,7 +449,7 @@
           "720p": 0.35
         },
         "source_status": "ok",
-        "accepted_at": "2026-08-18T04:55:03.643Z"
+        "accepted_at": "2026-08-18T05:48:11.882Z"
       },
       "kie": {
         "model": "Seedance 2.5",
@@ -516,7 +516,7 @@
           "720p": 0.2304
         },
         "source_status": "ok",
-        "accepted_at": "2026-08-18T04:55:03.643Z"
+        "accepted_at": "2026-08-18T05:48:11.882Z"
       },
       "atlas": {
         "model": "Seedance 2.5",
@@ -538,7 +538,7 @@
         },
         "rates_per_second": {},
         "source_status": "ok",
-        "accepted_at": "2026-08-18T04:55:03.643Z"
+        "accepted_at": "2026-08-18T05:48:11.882Z"
       }
     }
   },
@@ -550,8 +550,8 @@
       "source": "https://runway.com/pricing?tool=runway",
       "supporting_sources": [],
       "parser": "runway-plans-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
       "raw_sha256": "sha256-88d7b06e55d73bf199e7441798be1f7cec9259910f64a71eca7dc566802c544f",
@@ -578,7 +578,7 @@
         "promotions": []
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "raw_sha256": "sha256-88d7b06e55d73bf199e7441798be1f7cec9259910f64a71eca7dc566802c544f",
         "values": {
           "currency": "USD",
@@ -612,8 +612,8 @@
       "source": "https://academy.runwayml.com/models-pricing",
       "supporting_sources": [],
       "parser": "runway-model-table-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
       "raw_sha256": "sha256-31d51242b61b3d9ee26b504e487d39d5c988d17a933acfab7e4bff93e5244730",
@@ -634,7 +634,7 @@
         "unit_note": "/sec + 34 (1080p), 15 (720p), 10 (480p) per sec of input video"
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "raw_sha256": "sha256-31d51242b61b3d9ee26b504e487d39d5c988d17a933acfab7e4bff93e5244730",
         "values": {
           "model": "Seedance 2.5",
@@ -662,11 +662,11 @@
       "source": "https://fnf-api-gw.higgsfield.ai/fnf/subscriptions/v2/plans?plan_set_key=ps_a3&with_localization=true",
       "supporting_sources": [],
       "parser": "higgsfield-plan-api-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
-      "raw_sha256": "sha256-fe59e0dccdb2f8f17c846592fe0e95a8204564ba58efa167cbefbb568ddded1c",
+      "raw_sha256": "sha256-4d7ddad3f104e7eb6bb7c2cc0d31071ade871b915bbbe1d58d737e4c47b9cd06",
       "changed_at": "2026-08-13T14:33:11.091Z",
       "values": {
         "currency": "USD",
@@ -753,8 +753,8 @@
         }
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
-        "raw_sha256": "sha256-fe59e0dccdb2f8f17c846592fe0e95a8204564ba58efa167cbefbb568ddded1c",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
+        "raw_sha256": "sha256-4d7ddad3f104e7eb6bb7c2cc0d31071ade871b915bbbe1d58d737e4c47b9cd06",
         "values": {
           "currency": "USD",
           "plans": {
@@ -850,8 +850,8 @@
       "source": "https://website.ltx.studio/studio/pricing",
       "supporting_sources": [],
       "parser": "ltx-webflow-plans-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
       "raw_sha256": "sha256-d4580d12316c0c4a9a38e734b1381d442c306caf251f9b4dd9706600c17426a5",
@@ -877,7 +877,7 @@
         }
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "raw_sha256": "sha256-d4580d12316c0c4a9a38e734b1381d442c306caf251f9b4dd9706600c17426a5",
         "values": {
           "currency": "USD",
@@ -910,11 +910,11 @@
       "source": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video",
       "supporting_sources": [],
       "parser": "fal-endpoint-pricing-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
-      "raw_sha256": "sha256-5fbfc52fc351e3a1c2c8f5a1b2b3008bb80ab76b7a7ef18ccb17e4bf33277b94",
+      "raw_sha256": "sha256-d0cfb8c0a0212d8b70dddef84c43532d3d95cf2e93b85b72b3be5d26fb3a2c51",
       "changed_at": "2026-08-13T13:30:00.000Z",
       "values": {
         "model": "Seedance 2.5",
@@ -935,8 +935,8 @@
         "pricing_basis": "approximate standard 16:9 output; native audio included"
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
-        "raw_sha256": "sha256-5fbfc52fc351e3a1c2c8f5a1b2b3008bb80ab76b7a7ef18ccb17e4bf33277b94",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
+        "raw_sha256": "sha256-d0cfb8c0a0212d8b70dddef84c43532d3d95cf2e93b85b72b3be5d26fb3a2c51",
         "values": {
           "model": "Seedance 2.5",
           "availability": "live",
@@ -966,11 +966,11 @@
       "source": "https://replicate.com/bytedance/seedance-2.5",
       "supporting_sources": [],
       "parser": "replicate-model-tiers-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
-      "raw_sha256": "sha256-f02a30bb9bb92f38cf32c8f595a10ed61a998aa950a6c6985f7eacf6612d8b4a",
+      "raw_sha256": "sha256-7dc2f7239a62d3d6a69c95cf6a5cc1aa9c30f51633b79add7e0eb11831ad7f76",
       "changed_at": "2026-08-13T13:30:00.000Z",
       "values": {
         "model": "Seedance 2.5",
@@ -999,8 +999,8 @@
         }
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
-        "raw_sha256": "sha256-f02a30bb9bb92f38cf32c8f595a10ed61a998aa950a6c6985f7eacf6612d8b4a",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
+        "raw_sha256": "sha256-7dc2f7239a62d3d6a69c95cf6a5cc1aa9c30f51633b79add7e0eb11831ad7f76",
         "values": {
           "model": "Seedance 2.5",
           "availability": "live",
@@ -1038,11 +1038,11 @@
       "source": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video",
       "supporting_sources": [],
       "parser": "wavespeed-model-table-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
-      "raw_sha256": "sha256-c29fa7907b5138918421bfefac7e3fa51336142456dd62d29bdb3daf8cfd44ed",
+      "raw_sha256": "sha256-b941e8ff4830c141f2deb52c25b8b56e3974bffce2ead5bb4bd8d0fceb498d8c",
       "changed_at": "2026-08-13T13:30:00.000Z",
       "values": {
         "model": "Seedance 2.5",
@@ -1061,8 +1061,8 @@
         "pricing_basis": "standard text-to-video; published five-second table"
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
-        "raw_sha256": "sha256-c29fa7907b5138918421bfefac7e3fa51336142456dd62d29bdb3daf8cfd44ed",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
+        "raw_sha256": "sha256-b941e8ff4830c141f2deb52c25b8b56e3974bffce2ead5bb4bd8d0fceb498d8c",
         "values": {
           "model": "Seedance 2.5",
           "availability": "live",
@@ -1090,8 +1090,8 @@
       "source": "https://app.piapi.ai/docs/seedance-api/seedance-25",
       "supporting_sources": [],
       "parser": "piapi-live-docs-table-v2",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
       "raw_sha256": "sha256-52f39ca5fe94b18f3a75c1a91da423296c85fe995357d4dceb81be7498549fe1",
@@ -1113,7 +1113,7 @@
         "pricing_basis": "per output second; official live Seedance 2.5 docs"
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
         "raw_sha256": "sha256-52f39ca5fe94b18f3a75c1a91da423296c85fe995357d4dceb81be7498549fe1",
         "values": {
           "model": "Seedance 2.5",
@@ -1142,7 +1142,7 @@
       "source": "https://kie.ai/seedance-2-5",
       "supporting_sources": [],
       "parser": "kie-pricing-description-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
       "fetched_at": "2026-08-13T14:33:24.154Z",
       "status": "stale",
       "http_status": 200,
@@ -1229,11 +1229,11 @@
       "source": "https://runware.ai/pricing",
       "supporting_sources": [],
       "parser": "runware-pricing-catalog-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": 200,
-      "raw_sha256": "sha256-74a1d0eb173d357258c6105af529ad60b429affff053e9b6f59613698e04273a",
+      "raw_sha256": "sha256-4f5c9867493de9ec7ee55c41923376329ef2a0ee441226e1751030493a9f4eca",
       "changed_at": "2026-08-13T13:30:00.000Z",
       "values": {
         "model": "Seedance 2.5",
@@ -1252,8 +1252,8 @@
         "pricing_basis": "text/image-to-video; official one-second examples"
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
-        "raw_sha256": "sha256-74a1d0eb173d357258c6105af529ad60b429affff053e9b6f59613698e04273a",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
+        "raw_sha256": "sha256-4f5c9867493de9ec7ee55c41923376329ef2a0ee441226e1751030493a9f4eca",
         "values": {
           "model": "Seedance 2.5",
           "availability": "live",
@@ -1283,14 +1283,14 @@
         "https://static.atlascloud.ai/model/schema/bytedance-seedance-2.5-text-to-video.json"
       ],
       "parser": "atlas-model-default-v1",
-      "checked_at": "2026-08-18T04:55:03.643Z",
-      "fetched_at": "2026-08-18T04:55:03.643Z",
+      "checked_at": "2026-08-18T05:48:11.882Z",
+      "fetched_at": "2026-08-18T05:48:11.882Z",
       "status": "ok",
       "http_status": {
         "https://www.atlascloud.ai/models/bytedance/seedance-2.5/text-to-video": 200,
         "https://static.atlascloud.ai/model/schema/bytedance-seedance-2.5-text-to-video.json": 200
       },
-      "raw_sha256": "sha256-d0b75fa99175931020c5a6cf0abd605ed19f4ac7b605bd6214f5e0da001dd104",
+      "raw_sha256": "sha256-f8bf2a2a802aff391976e2eebe840ad67416467cc56af32f22d7daf099eae617",
       "changed_at": "2026-08-13T13:30:00.000Z",
       "values": {
         "model": "Seedance 2.5",
@@ -1309,8 +1309,8 @@
         "pricing_basis": "official page price at the official schema's default 5s / 720p configuration"
       },
       "last_good": {
-        "accepted_at": "2026-08-18T04:55:03.643Z",
-        "raw_sha256": "sha256-d0b75fa99175931020c5a6cf0abd605ed19f4ac7b605bd6214f5e0da001dd104",
+        "accepted_at": "2026-08-18T05:48:11.882Z",
+        "raw_sha256": "sha256-f8bf2a2a802aff391976e2eebe840ad67416467cc56af32f22d7daf099eae617",
         "values": {
           "model": "Seedance 2.5",
           "availability": "live",
